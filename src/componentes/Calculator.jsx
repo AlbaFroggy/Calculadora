@@ -17,20 +17,20 @@ function Calculator() {
   };
 
   return (
-    <div className="bg-[#023047] w-80 mx-auto mt-20 p-4 rounded-lg shadow-lg">
+    <div className="bg-[#373147] border border-purple-600 w-80 mx-auto mt-20 p-4 rounded-lg shadow-lg">
       {/* Input */}
       <input
         type="text"
         value={result || "0"}
         disabled
-        className="border border-white rounded-md w-full text-right py-1 px-5 text-2xl bg-transparent text-white"
+        className=" bg-white border border-purple-600 rounded-md w-full text-right py-1 px-5 text-2xl bg-transparent text-purple-900"
       />
 
       {/* Buttons */}
       <div className="grid grid-cols-4 gap-y-4 gap-x-3 mt-4">
         {/* Primera fila */}
         <button
-          className="bg-[#2c2995] text-white rounded-lg p-2 transition duration-300 active:-translate-y-1 text-xl"
+          className="bg-[#2c2995] text-white rounded-lg p-2 transition duration-300 active:-translate-y-1 text-xl "
           onClick={clear}
         >
           AC
